@@ -8,6 +8,7 @@ GSAP-анимации, семантическая вёрстка, SEO-база, 
 | № | Проект | Демо | Исходники |
 |---|--------|------|-----------|
 | 01 | Смузи-боулы — лендинг доставки смузи-боулов | [открыть](https://ta1man-404.github.io/portfolio/01-smoothie-bowl/) | [src/01-smoothie-bowl](src/01-smoothie-bowl/) |
+| 02 | Суши SYSHI — лендинг «собери свой сет сам» | [открыть](https://ta1man-404.github.io/portfolio/02-sushi-set/) | [src/02-sushi-set](src/02-sushi-set/) |
 
 ## Стек
 
@@ -19,4 +20,6 @@ CSP-заголовок в production-сборке.
 ## Структура
 
 - `01-smoothie-bowl/` — собранный статический сайт (то, что отдаёт GitHub Pages)
+- `02-sushi-set/` — собранный статический сайт
 - `src/01-smoothie-bowl/` — исходники проекта (Vite: `npm i`, `npm run dev`, `npm run build`)
+- `src/02-sushi-set/` — исходники проекта
