@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пицца из печи — пиццерия с дровяной печью</title>
+  <meta name="description" content="Фирменная пицца из итальянской дровяной печи: 6 видов пиццы, размеры 24/30/36 см. Забронируйте столик и закажите заранее — к приходу пицца будет готова.">
+  <link rel="canonical" href="https://ta1man-404.github.io/portfolio/04-pizza-oven/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Пицца из печи — пиццерия с дровяной печью">
+  <meta property="og:description" content="Фирменные пиццы из дровяной печи по традиционным технологиям. Выбор размера 24/30/36 см, предзаказ к приходу.">
+  <meta property="og:image" content="./img/hero-pizza.webp">
+  <meta property="og:url" content="https://ta1man-404.github.io/portfolio/04-pizza-oven/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1F1F1F">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/nunito-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/nunito-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./assets/index-CwNGTfQY.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-3e4_nis3.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Пицца из печи — на главную">
+        <svg class="logo__mark" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M15 27 3.8 7.2A14.5 14.5 0 0 1 26.2 7.2L15 27Z" fill="#C7CDA6"/>
+          <circle cx="12" cy="10.5" r="1.7" fill="#1F1F1F"/>
+          <circle cx="18.5" cy="9.5" r="1.7" fill="#1F1F1F"/>
+          <circle cx="15.4" cy="15.5" r="1.7" fill="#1F1F1F"/>
+        </svg>
+        <span class="logo__text">Пицца</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list" id="nav-list">
+          <li><a class="nav__link" href="#top">Главная</a></li>
+          <li><a class="nav__link" href="#menu">Пицца</a></li>
+          <li><a class="nav__link" href="#why">Почему мы</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--small header__cta" href="#order">Заказать</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img" src="./img/hero-pizza.webp" srcset="./img/hero-pizza-1280.webp 1280w, ./img/hero-pizza.webp 1920w"
+             sizes="100vw" alt="" width="1920" height="1920" fetchpriority="high">
+        <canvas class="hero__embers" id="embers"></canvas>
+        <div class="hero__shade"></div>
+      </div>
+      <div class="container hero__content">
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__word">Пицца</span>
+          <span class="hero__word">из</span>
+          <span class="hero__word hero__word--accent">печи</span>
+        </h1>
+        <p class="hero__subtitle">Наша пиццерия гордится своей исключительной репутацией и предлагает
+          уникальное меню. В нём только фирменные блюда, приготовленные в дровяной печи
+          по традиционным технологиям, со вкусом настоящей Италии!</p>
+        <a class="btn btn--glow hero__cta" href="#order">Заказать</a>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="why section" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="section__title" id="why-title">Почему наша пицца<br><span class="accent">такая вкусная?</span></h2>
+        <ul class="why__list">
+          <li class="why-card reveal">
+            <svg class="why-card__icon draw" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 40V26a16 16 0 0 1 32 0v14"/>
+              <path d="M4 40h40"/>
+              <path class="draw-fire" d="M24 33c0-3.5 3-4.2 3-7.5 2 1.3 4 3.4 4 6.2 0 3.2-2.8 5.3-7 5.3s-7-2.1-7-5.3c0-2.8 2-4.9 4-6.2 0 3.3 3 4 3 7.5Z"/>
+            </svg>
+            <h3 class="why-card__title">Итальянская печь</h3>
+            <p class="why-card__text">Выпекает хрустящую снаружи и сочную внутри пиццу</p>
+          </li>
+          <li class="why-card reveal">
+            <svg class="why-card__icon draw" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 8h8v6l3 5v21a2 2 0 0 1-2 2H19a2 2 0 0 1-2-2V19l3-5V8Z"/>
+              <path d="M17 28h14"/>
+              <path d="M24 25c-2.5 3-4 5-4 7a4 4 0 0 0 8 0c0-2-1.5-4-4-7Z"/>
+            </svg>
+            <h3 class="why-card__title">Оливковое масло</h3>
+            <p class="why-card__text">Делает тесто мягче и придаёт ему приятный аромат</p>
+          </li>
+          <li class="why-card reveal">
+            <svg class="why-card__icon draw" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 34 34 10l8 4-4 20-24 6V34Z"/>
+              <circle cx="20" cy="28" r="2.4"/>
+              <circle cx="28" cy="22" r="2.4"/>
+              <circle cx="24" cy="33" r="1.8"/>
+            </svg>
+            <h3 class="why-card__title">Идеальный сыр</h3>
+            <p class="why-card__text">Тянется за каждым кусочком и тает во рту</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- МЕНЮ -->
+    <section class="menu section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 class="section__title" id="menu-title">Выбор <span class="accent">пиццы</span></h2>
+
+        <div class="size-tabs" role="radiogroup" aria-label="Размер пиццы" id="size-tabs">
+          <button class="size-tabs__tab" role="radio" aria-checked="true" data-size="24">24 см</button>
+          <button class="size-tabs__tab" role="radio" aria-checked="false" data-size="30">30 см</button>
+          <button class="size-tabs__tab" role="radio" aria-checked="false" data-size="36">36 см</button>
+          <span class="size-tabs__thumb" aria-hidden="true"></span>
+        </div>
+
+        <ul class="menu__grid" id="menu-grid"><!-- карточки рендерятся из JS-данных --></ul>
+      </div>
+    </section>
+
+    <!-- ФОРМА -->
+    <section class="order section" id="order" aria-labelledby="order-title">
+      <div class="container order__inner">
+        <div class="order__left">
+          <h2 class="section__title" id="order-title">Заказать <span class="accent">пиццу</span></h2>
+          <p class="order__text">Заранее забронируйте столик и сделайте заказ, чтобы к вашему приходу пицца была готова.</p>
+          <p class="order__choice" id="order-choice" hidden></p>
+          <form class="order__form" id="order-form" novalidate>
+            <div class="field">
+              <input class="field__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__"
+                     autocomplete="tel" inputmode="tel" aria-describedby="phone-error">
+              <label class="field__label" for="phone">Телефон</label>
+              <p class="field__error" id="phone-error" role="alert" hidden></p>
+            </div>
+            <button class="btn btn--glow order__submit" type="submit">Заказать</button>
+          </form>
+          <div class="order__success" id="order-success" hidden>
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" stroke="#C7CDA6" stroke-width="2"/>
+              <path d="M15 27l8 8 14-16" stroke="#C7CDA6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="order__success-title">Заказ принят!</h3>
+            <p class="order__success-text" id="order-success-text">Мы перезвоним и подтвердим бронь столика.</p>
+          </div>
+        </div>
+        <div class="order__right" aria-hidden="true">
+          <img class="order__slice" id="order-slice" src="./img/pizza-slice-640.webp"
+               srcset="./img/pizza-slice-640.webp 640w, ./img/pizza-slice.webp 1024w"
+               sizes="(max-width: 900px) 60vw, 42vw" alt="" width="1024" height="1024" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top" aria-label="Пицца из печи — наверх">
+        <svg class="logo__mark" width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <path d="M15 27 3.8 7.2A14.5 14.5 0 0 1 26.2 7.2L15 27Z" fill="#C7CDA6"/>
+          <circle cx="12" cy="10.5" r="1.7" fill="#1F1F1F"/>
+          <circle cx="18.5" cy="9.5" r="1.7" fill="#1F1F1F"/>
+          <circle cx="15.4" cy="15.5" r="1.7" fill="#1F1F1F"/>
+        </svg>
+        <span class="logo__text">Пицца</span>
+      </a>
+      <p class="footer__copy">© 2026 Пицца из печи. Все права защищены</p>
+    </div>
+  </footer>
+
+</body>
+</html>
