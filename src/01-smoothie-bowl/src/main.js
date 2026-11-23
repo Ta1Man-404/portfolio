@@ -74,36 +74,36 @@ if (!reduceMotion) {
     scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
   });
 
-  /* Появление блоков при скролле */
-  gsap.utils.toArray('[data-reveal]').forEach((el) => {
-    gsap.from(el, {
-      y: 44,
-      opacity: 0,
-      duration: 0.9,
+  /* Появление блоков при скролле.
+     Важно: fromTo + immediateRender:false + once:true.
+     from() со ScrollTrigger ставит начальное состояние сразу при загрузке,
+     и после ScrollTrigger.refresh() (ресайз, догрузка шрифтов) или при
+     восстановлении позиции скролла элементы могли навсегда застрять
+     невидимыми. Новый вариант: контент виден до входа во вьюпорт,
+     анимация играет один раз и ScrollTrigger удаляется — обратный скролл
+     и refresh ничего не ломают. */
+  const reveal = (targets, fromVars, toVars, trigger, start) => {
+    gsap.fromTo(targets, fromVars, {
+      ...toVars,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      rotate: 0,
       ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 86%' },
+      immediateRender: false,
+      scrollTrigger: { trigger, start, once: true },
     });
+  };
+
+  gsap.utils.toArray('[data-reveal]').forEach((el) => {
+    reveal(el, { y: 44, opacity: 0 }, { duration: 0.9 }, el, 'top 86%');
   });
 
   /* Карточки преимуществ — stagger-волной */
-  gsap.from('.adv-card', {
-    y: 60,
-    opacity: 0,
-    duration: 0.85,
-    ease: 'power3.out',
-    stagger: 0.14,
-    scrollTrigger: { trigger: '.advantages__grid', start: 'top 82%' },
-  });
+  reveal('.adv-card', { y: 60, opacity: 0 }, { duration: 0.85, stagger: 0.14 }, '.advantages__grid', 'top 82%');
 
   /* Декор-авокадо: въезд + дрейф при скролле */
-  gsap.from('[data-reveal-deco]', {
-    x: 80,
-    opacity: 0,
-    rotate: 10,
-    duration: 1.1,
-    ease: 'power3.out',
-    scrollTrigger: { trigger: '.advantages', start: 'top 70%' },
-  });
+  reveal('[data-reveal-deco]', { x: 80, opacity: 0, rotate: 10 }, { duration: 1.1 }, '.advantages', 'top 70%');
   gsap.to('[data-reveal-deco]', {
     y: -70,
     ease: 'none',
@@ -111,14 +111,7 @@ if (!reduceMotion) {
   });
 
   /* Карточки меню — появление сеткой */
-  gsap.from('.menu-card', {
-    y: 70,
-    opacity: 0,
-    duration: 0.9,
-    ease: 'power3.out',
-    stagger: 0.12,
-    scrollTrigger: { trigger: '.menu__grid', start: 'top 80%' },
-  });
+  reveal('.menu-card', { y: 70, opacity: 0 }, { duration: 0.9, stagger: 0.12 }, '.menu__grid', 'top 80%');
 }
 
 /* Лёгкий 3D-tilt карточек меню (без зависимости от reduced-motion блока выше,
