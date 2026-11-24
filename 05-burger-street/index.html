@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бургерная — сочные бургеры с доставкой за 30 минут</title>
+  <meta name="description" content="Авторские бургеры из мраморной говядины. Доставка по городу за 30 минут — или заказ за наш счёт. Выберите свой бургер!">
+  <link rel="canonical" href="https://ta1man-404.github.io/portfolio/05-burger-street/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Бургерная — сочные бургеры с доставкой за 30 минут">
+  <meta property="og:description" content="Авторские бургеры из мраморной говядины. Доставка за 30 минут или бесплатно.">
+  <meta property="og:image" content="img/hero-burger.webp">
+  <meta property="og:url" content="https://ta1man-404.github.io/portfolio/05-burger-street/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" href="fonts/golostext-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./assets/index-v-xkMqIM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-JzzH9AaM.css">
+</head>
+<body>
+
+  <!-- ======================= ШАПКА ======================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Бургерная — на главную">
+        <span class="logo__badge" aria-hidden="true">
+          <img src="img/logo-burger.webp" alt="" width="40" height="40">
+        </span>
+        <span class="logo__text">бургерная</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#advantages">Почему у нас</a></li>
+          <li><a class="nav__link" href="#menu">Меню бургеров</a></li>
+          <li><a class="nav__link" href="#order">Доставка</a></li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:+79000000000">+7 900 000-00-00</a>
+      <button class="burger-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Мобильная навигация" hidden>
+    <ul class="mobile-menu__list">
+      <li><a class="mobile-menu__link" href="#advantages">Почему у нас</a></li>
+      <li><a class="mobile-menu__link" href="#menu">Меню бургеров</a></li>
+      <li><a class="mobile-menu__link" href="#order">Доставка</a></li>
+    </ul>
+  </nav>
+
+  <!-- Мини-шапка-пилюля (появляется после скролла) -->
+  <div class="mini-header" aria-hidden="true">
+    <nav class="mini-header__pill" aria-label="Быстрая навигация">
+      <a href="#top" class="mini-header__logo">бургерная</a>
+      <a href="#advantages">Почему у нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#order" class="mini-header__cta">Заказать</a>
+      <button class="mini-header__burger burger-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__badge"><span class="dot" aria-hidden="true"></span>Новинка недели</p>
+          <h1 class="hero__title" id="heroTitle">
+            <span class="stamp-line">Бургер</span>
+            <span class="stamp-line stamp-line--accent">чеддер</span>
+          </h1>
+          <p class="hero__text">Сочная мраморная говядина, расплавленный чеддер
+            и фирменный соус в тёплой булочке бриошь. Привезём горячим
+            за 30 минут — или заказ за наш счёт.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--magnetic" href="#menu">Смотреть меню</a>
+            <p class="hero__price">от <strong>520 ₽</strong></p>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__paper"></div>
+          <img class="hero__burger" src="img/hero-burger.webp" alt=""
+            width="1200" height="1079" fetchpriority="high">
+          <img class="hero__pepper hero__pepper--1" src="img/pepper-1.webp" alt="" width="500" height="431">
+          <img class="hero__pepper hero__pepper--2" src="img/pepper-2.webp" alt="" width="700" height="700">
+        </div>
+      </div>
+      <div class="marquee marquee--dark" aria-hidden="true">
+        <div class="marquee__track">
+          <span>говядина&nbsp;•&nbsp;чеддер&nbsp;•&nbsp;бекон&nbsp;•&nbsp;айсберг&nbsp;•&nbsp;бриошь&nbsp;•&nbsp;томат&nbsp;•&nbsp;соус bbq&nbsp;•&nbsp;</span>
+          <span>говядина&nbsp;•&nbsp;чеддер&nbsp;•&nbsp;бекон&nbsp;•&nbsp;айсберг&nbsp;•&nbsp;бриошь&nbsp;•&nbsp;томат&nbsp;•&nbsp;соус bbq&nbsp;•&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ПРЕИМУЩЕСТВА ======================= -->
+    <section class="adv section" id="advantages" aria-labelledby="advTitle">
+      <div class="container">
+        <h2 class="section__title wipe" id="advTitle">Почему нас выбирают?</h2>
+        <ul class="adv__list">
+          <li class="adv__item wipe">
+            <img class="adv__icon" src="img/logo-burger.webp" alt="" width="256" height="256" loading="lazy">
+            <h3 class="adv__name">Авторские рецепты</h3>
+            <p class="adv__text">Наши бургеры обладают уникальным сочетанием вкусов
+              и не похожи ни на какие другие. Мы тщательно отбираем лучшие
+              ингредиенты и сочетания вкусов для нашего меню.</p>
+          </li>
+          <li class="adv__item wipe">
+            <img class="adv__icon" src="img/adv-steak.webp" alt="" width="512" height="512" loading="lazy">
+            <h3 class="adv__name">Мраморная говядина</h3>
+            <p class="adv__text">Для наших бургеров мы используем отборную 100%
+              мраморную говядину, которую закупаем исключительно у фермеров.
+              Мы уверены в качестве нашего мяса.</p>
+          </li>
+          <li class="adv__item wipe">
+            <img class="adv__icon" src="img/adv-truck.webp" alt="" width="512" height="512" loading="lazy">
+            <h3 class="adv__name">Быстрая доставка</h3>
+            <p class="adv__text">Мы доставляем в пределах МКАД за 30 минут, а если
+              не успеем — доставка бесплатно. Мы тщательно упаковываем наши
+              бургеры, чтобы по дороге они не остыли.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="marquee marquee--craft" aria-hidden="true">
+      <div class="marquee__track">
+        <span>выбери свой бургер&nbsp;—&nbsp;от 520 ₽&nbsp;•&nbsp;выбери свой бургер&nbsp;—&nbsp;от 520 ₽&nbsp;•&nbsp;</span>
+        <span>выбери свой бургер&nbsp;—&nbsp;от 520 ₽&nbsp;•&nbsp;выбери свой бургер&nbsp;—&nbsp;от 520 ₽&nbsp;•&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ======================= МЕНЮ ======================= -->
+    <section class="menu section" id="menu" data-theme="light" aria-labelledby="menuTitle">
+      <div class="container">
+        <h2 class="section__title section__title--dark wipe" id="menuTitle">Меню бургеров</h2>
+        <p class="menu__subtitle wipe">выберите свой бургер</p>
+        <ul class="menu__grid">
+
+          <li class="ticket wipe" data-burger="Бургер чеддер" data-price="520">
+            <span class="ticket__chip">Новинка</span>
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-cheddar.webp" alt="Бургер чеддер" width="800" height="533" loading="lazy">
+              <h3 class="ticket__name">Бургер чеддер</h3>
+              <p class="ticket__desc">Котлета из говядины, булочка, томат, сыр чеддер,
+                грудинка, красный лук, айсберг, майонез</p>
+              <p class="ticket__weight">360 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">520 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+          <li class="ticket wipe" data-burger="Чеддер &amp; бекон" data-price="560">
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-cheddar-bacon.webp" alt="Бургер чеддер и бекон" width="800" height="533" loading="lazy">
+              <h3 class="ticket__name">Чеддер &amp; бекон</h3>
+              <p class="ticket__desc">Котлета из говядины криспи, булочка, томат, чеддер,
+                грудинка, красный лук, айсберг, майонез, кетчуп, сырный соус</p>
+              <p class="ticket__weight">380 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">560 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+          <li class="ticket wipe" data-burger="BBQ с беконом и курицей" data-price="560">
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-bbq.webp" alt="Бургер BBQ с беконом и курицей" width="800" height="533" loading="lazy">
+              <h3 class="ticket__name">BBQ с беконом и курицей</h3>
+              <p class="ticket__desc">Бриошь с кунжутом, куриная котлета, чеддер, томат,
+                маринованные огурец и лук, ромен, бекон, соус BBQ</p>
+              <p class="ticket__weight">390 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">560 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+          <li class="ticket wipe" data-burger="Дабл биф бургер" data-price="660">
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-double.webp" alt="Дабл биф бургер" width="800" height="800" loading="lazy">
+              <h3 class="ticket__name">Дабл биф бургер</h3>
+              <p class="ticket__desc">Две говяжьи котлеты, чеддер, романо, маринованные
+                огурцы, томат, бекон, красный лук, горчица</p>
+              <p class="ticket__weight">420 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">660 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+          <li class="ticket wipe" data-burger="Баварский бургер" data-price="520">
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-bavarian.webp" alt="Баварский бургер" width="800" height="554" loading="lazy">
+              <h3 class="ticket__name">Баварский бургер</h3>
+              <p class="ticket__desc">Булочка, говяжья котлета, красный лук, сыр,
+                охотничья колбаска, соус барбекю, сырный соус, айсберг</p>
+              <p class="ticket__weight">220 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">520 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+          <li class="ticket wipe" data-burger="Бекон чизбургер" data-price="600">
+            <div class="ticket__body">
+              <img class="ticket__img" src="img/menu-bacon-cheese.webp" alt="Бекон чизбургер" width="800" height="533" loading="lazy">
+              <h3 class="ticket__name">Бекон чизбургер</h3>
+              <p class="ticket__desc">Булочка, говяжья котлета, грудинка, помидор,
+                маринованный огурец, сыр, сырный соус, кетчуп, зелень</p>
+              <p class="ticket__weight">300 гр</p>
+            </div>
+            <div class="ticket__stub">
+              <p class="ticket__price">600 ₽</p>
+              <button class="btn btn--stub" type="button">Добавить в заказ</button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <div class="marquee marquee--dark marquee--reverse" aria-hidden="true">
+      <div class="marquee__track">
+        <span>доставка 30 минут&nbsp;•&nbsp;не успели — бургер за наш счёт&nbsp;•&nbsp;</span>
+        <span>доставка 30 минут&nbsp;•&nbsp;не успели — бургер за наш счёт&nbsp;•&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ======================= ФОРМА-ЧЕК ======================= -->
+    <section class="order section" id="order" aria-labelledby="orderTitle">
+      <div class="container order__inner">
+        <div class="order__form-wrap">
+          <h2 class="section__title wipe" id="orderTitle">Оформление заказа</h2>
+          <p class="order__hint wipe">Заполните все данные, и наш менеджер свяжется
+            с вами для подтверждения заказа</p>
+
+          <form class="receipt" id="orderForm" novalidate>
+            <p class="receipt__head">* бургерная *</p>
+            <p class="receipt__sub">кассовый чек · предзаказ</p>
+
+            <div class="receipt__field">
+              <label for="burgerSelect">Выберите бургер</label>
+              <select id="burgerSelect" name="burger" required>
+                <option value="" selected disabled>— не выбран —</option>
+                <option>Бургер чеддер</option>
+                <option>Чеддер &amp; бекон</option>
+                <option>BBQ с беконом и курицей</option>
+                <option>Дабл биф бургер</option>
+                <option>Баварский бургер</option>
+                <option>Бекон чизбургер</option>
+              </select>
+              <p class="receipt__error" data-error-for="burgerSelect"></p>
+            </div>
+
+            <div class="receipt__field">
+              <label for="nameInput">Ваше имя</label>
+              <input id="nameInput" name="name" type="text" autocomplete="name"
+                placeholder="Анатолий" required minlength="2">
+              <p class="receipt__error" data-error-for="nameInput"></p>
+            </div>
+
+            <div class="receipt__field">
+              <label for="phoneInput">Ваш телефон</label>
+              <input id="phoneInput" name="phone" type="tel" autocomplete="tel"
+                inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+              <p class="receipt__error" data-error-for="phoneInput"></p>
+            </div>
+
+            <p class="receipt__chip" id="orderChip" hidden></p>
+
+            <button class="btn btn--primary receipt__submit" type="submit">Оформить заказ</button>
+            <p class="receipt__foot">спасибо за заказ!</p>
+          </form>
+
+          <!-- Экран успеха: чек «пробит» -->
+          <div class="receipt receipt--success" id="orderSuccess" hidden>
+            <p class="receipt__head">* бургерная *</p>
+            <p class="receipt__sub">кассовый чек</p>
+            <div class="receipt__stamp" aria-hidden="true">Заказ принят</div>
+            <dl class="receipt__lines">
+              <div><dt>Заказ</dt><dd id="successBurger"></dd></div>
+              <div><dt>Имя</dt><dd id="successName"></dd></div>
+              <div><dt>Телефон</dt><dd id="successPhone"></dd></div>
+              <div><dt>Итого</dt><dd id="successPrice"></dd></div>
+              <div><dt>№</dt><dd id="successNum"></dd></div>
+            </dl>
+            <p class="receipt__foot">менеджер свяжется с вами<br>в течение 10 минут</p>
+            <button class="btn btn--stub receipt__again" type="button" id="orderAgain">Новый заказ</button>
+          </div>
+        </div>
+
+        <div class="order__visual" aria-hidden="true">
+          <img src="img/craft-box.webp" alt="" width="900" height="773" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= ФУТЕР ======================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top" aria-label="Бургерная — наверх">
+        <span class="logo__badge" aria-hidden="true">
+          <img src="img/logo-burger.webp" alt="" width="40" height="40" loading="lazy">
+        </span>
+        <span class="logo__text">бургерная</span>
+      </a>
+      <p class="footer__hours">Работаем<br><strong>с 9:00 — 23:00</strong></p>
+      <p class="footer__contact">Мы на связи с вами<br><a href="tel:+79000000000">+7 900 000-00-00</a></p>
+      <p class="footer__rights">Все права защищены</p>
+    </div>
+  </footer>
+
+</body>
+</html>
